@@ -1,0 +1,18 @@
+<div class="skills">
+	
+	<h1>My skillset</h1>
+	<table id="technical" class="project table">
+		<caption>Technical Skills</caption>
+		<tr ng-repeat="skill in technicalSkillData">
+			<th>{{skill.skillType}}</th>
+			<td>{{skill.skillDesc}}</td>
+		</tr>
+	</table>
+	<table id="functional" class="project table">
+		<caption>Functional Skills</caption>
+		<tr ng-repeat="skill in functionalSkillData">
+			<th>{{skill.skillType}}</th>
+			<td>{{skill.skillDesc}}</td>
+		</tr>
+	</table>
+</div>

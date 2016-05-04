@@ -1,0 +1,54 @@
+.container{
+	padding:0;
+}
+h1{
+	color: #ffffff;
+	font-family: 'myFirstFont' Arial;
+	font-size: 32px;
+	line-height: 72px;
+	margin: 16px 0;
+	text-transform: uppercase;
+}
+table{
+	width: 100%;
+	table-layout: fixed;
+}
+.table>tbody>tr>th{
+	width: 35%;
+	vertical-align: middle;
+	border:none;
+}
+table caption{
+	padding:10px;
+	text-align: center;
+	color:#000;
+	font-weight: bold;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+table#technical{
+	border:1px solid #EA6153;
+}
+table#technical th, table#technical caption{
+	background: #EA6153 url('../images/nav-noise.png') repeat;;
+	word-wrap: break-word;
+}
+table#technical td{
+	border-bottom:1px solid #EA6153;
+}
+table#functional{
+	border:2px solid #27AE60;
+}
+table#functional th, table#functional caption{
+	background: #27AE60 url('../images/nav-noise.png') repeat;;
+}
+table#functional td{
+	border-bottom:1px solid #27AE60;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td{
+	background: #EAEAEA;
+}

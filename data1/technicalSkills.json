@@ -1,0 +1,23 @@
+
+[
+    {
+        "skillType" : "Operating System",
+        "skillDesc" : "Windows XP/2000, Windows 7"
+    },
+    {
+        "skillType" : "Skills",
+        "skillDesc" : "HTML 4/5, CSS 2/3, Twitter Bootstrap 3"
+    },
+    {
+        "skillType" : "Languages",
+        "skillDesc" : "JavaScript, JQuery, AngularJS(Beginner), JSON, Bootstrap, GruntJS"
+    },
+    {
+        "skillType" : "Technical / Tools",
+        "skillDesc" : "Eclipse, Github, Cross Browser compatibility, Performance Optimization. Sublime, Dreamveiwer"
+    },
+    {
+        "skillType" : "Web server",
+        "skillDesc" : "Eclipse, Github, Cross Browser compatibility, Performance Optimization. Sublime, Dreamveiwer"
+    }
+]

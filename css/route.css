@@ -1,0 +1,58 @@
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+.about,.work,.skills, .contact{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding:2%;
+}
+.about{
+  background: #A49B42 url('../images/nav-noise.png') repeat;
+}
+.work{
+  background: #fff url('../images/nav-noise.png') repeat;
+}.skills{
+  background: #EAA935 url('../images/nav-noise.png') repeat;
+}
+.contact{
+  background: #817C23 url('../images/nav-noise.png') repeat;
+}
+
+.ui-view-container {
+  position: relative;
+}
+.animate .ng-enter {
+ animation: 2.8s opac;
+ -webkit-animation: 2.8s opac;
+}
+@keyframe opac{
+  from{
+    opacity:0.2;
+  }
+  to{
+    opacity:1;
+  }
+}
+.animate .ng-leave {  
+  -webkit-transition:all 3s ease;
+	-moz-transition:all 1.5s ease-in-out;
+	-o-transition:all 1.5s ease-in-out;
+	transition:all 1.5s ease-in-out;
+}
+
+.animate .ng-enter {
+ /* -webkit-transform:scale(0.1);
+  transform:scale(0.1);*/
+  opacity: 0;
+}
+.animate .ng-leave {
+ -webkit-transform:translate(-300%,0);
+}
+.animate .ng-enter-active {
+ /*-webkit-transform:scale(1);
+  transform:scale(1);*/
+  opacity: 1;
+}
+.animate .ng-leave-active {
+  /*-webkit-transform:translate(-300%,0);*/
+}

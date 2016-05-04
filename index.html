@@ -1,0 +1,52 @@
+<html>
+   
+   <head>
+	    <title>Angular JS Views</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" href="dependencies/bootstrap/dist/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	    <link rel="stylesheet" type="text/css" href="css/route.css">
+	    <link rel="stylesheet" type="text/css" href="css/nav.css">
+	    <link rel="stylesheet" type="text/css" href="css/font.css">
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	    
+	    <script src="dependencies/jquery/jquery-1.12.3.min.js"></script>
+	    <script src="dependencies/angular/angular.js"></script>
+		<script src="dependencies/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="dependencies/angular-animate/angular-animate.js"></script>
+		<script src="dependencies/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<script type="text/javascript" src="scripts/controllers/work.js"></script>
+		<script type="text/javascript" src="scripts/controllers/skills.js"></script>
+   </head>
+   
+   <body>
+	   <div ng-app = "resumeExample">
+	      	<div class="toggle-icon" ng-click="toggle = !toggle" ng-class="toggle ? 'close' : 'toggle'">
+		      	<span class="toggle-icon-line lineTop"></span>
+		      	<span class="toggle-icon-line lineMid"></span>
+		      	<span class="toggle-icon-line LineBtm"></span>
+		    </div>
+		    
+	      	<nav ng-show="toggle" ng-class="toggle ? 'showNav' : 'toggle'" class="hideNav">
+	      		<ul>
+	      		   <li><a href = "#/about"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
+             ng-click="itemClicked($index)">About Me</a></li>
+			        <li><a href = "#/skills" ng-class="{ 'selected-class-name': $index == selectedIndex }"
+             ng-click="itemClicked($index)">Skills</a></li>
+			        <li><a href = "#/work"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
+             ng-click="itemClicked($index)">My work</a></li>
+			        <li><a href = "#/contact"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
+             ng-click="itemClicked($index)">Contact Me</a></li>
+			        <li><a href = "#/download"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
+             ng-click="itemClicked($index)">Download Resume</a></li>
+	      		</ul>
+	      	</nav>
+	      	<div class="ui-view-container animate">
+		      	<div ui-view></div>        
+		    </div>  
+	    </div>
+   </body>
+</html>

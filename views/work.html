@@ -1,0 +1,26 @@
+<div class="work">
+    <div class="container">
+    <project-details-popup></project-details-popup>
+        <outer-wheel></outer-wheel>
+        <div class="projectDetails">
+            <img src="images/UI-logo.png" class="Ui-image">
+
+            <div class="pane">
+                <div class="RightPane">
+                    <div class="projectDetail jointLeft" ng-repeat="Project in projectDetails| limitTo: projectDetails.length/2+1" ng-click="popup($index)" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <h3>{{ Project.ProjectName }}</h3>
+                        <div class="projectSummary">{{ Project.ProjectName }}</div>
+                        <joint></joint>
+                    </div>    
+                </div>
+                <div class="LeftPane">
+                    <div class="projectDetail jointRight" ng-repeat="Project in projectDetails| limitTo:projectDetails.length:projectDetails.length/2+1" ng-click="popup($index)" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <h3>{{ Project.ProjectName }}</h3>
+                        <div class="projectSummary">{{ Project.ProjectName }}</div>
+                        <joint></joint>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
