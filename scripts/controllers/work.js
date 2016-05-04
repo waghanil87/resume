@@ -1,4 +1,4 @@
-angular.module('resumeExample').controller("workCtrl", function($scope, $http) {
+angular.module('resumeExample').controller("workCtrl", function($scope,$rootScope, $http, $modal) {
   $http.get('data1/resume.json').
     success(function(data, status, headers, config) {
         $scope.projectDetails = data;

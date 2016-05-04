@@ -3,15 +3,15 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
+                 {{selectedProject}}
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-                    <h4 class="modal-title" id="gridSystemModalLabel">{{ projectDetails[$scope.selectedProject].ProjectName }}</h4>
+                    <h4 class="modal-title" id="gridSystemModalLabel">{{ projectDetails[selectedProject].ProjectName }}</h4>
                 </div>
                 <div class="modal-body">
-                <p>{{selectedProject}}</p>
-                    <div class="projectSummary">{{ projectDetails[$scope.selectedProject].ProjectDesc }}</div>
+                    <div class="projectSummary">{{ projectDetails[selectedProject].ProjectDesc }}</div>
                     <ul>
-                         <li ng-repeat="r in projectDetails[$scope.selectedProject].ProjectsRoles">{{r.role}}</li>
+                         <li ng-repeat="r in projectDetails[selectedProject].ProjectsRoles">{{r.role}}</li>
                     </ul>
                 </div>
             </div>

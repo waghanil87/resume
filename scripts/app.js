@@ -1,5 +1,5 @@
 
-  var resumeExample = angular.module('resumeExample', ["ui.router", "ngAnimate"])
+  var resumeExample = angular.module('resumeExample', ["ui.router", "ngAnimate", 'ui.bootstrap'])
     resumeExample.config(function($stateProvider, $urlRouterProvider){    
       $stateProvider
           .state("about", {
