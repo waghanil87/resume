@@ -33,17 +33,16 @@
 		    
 	      	<nav ng-show="toggle" ng-class="toggle ? 'showNav' : 'toggle'" class="hideNav">
 	      		<ul>
-	      		   <li><a href = "#/about"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
-             ng-click="itemClicked($index)">About Me</a></li>
-			        <li><a href = "#/skills" ng-class="{ 'selected-class-name': $index == selectedIndex }"
-             ng-click="itemClicked($index)">Skills</a></li>
-			        <li><a href = "#/work"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
-             ng-click="itemClicked($index)">My work</a></li>
-			        <li><a href = "#/contact"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
-             ng-click="itemClicked($index)">Contact Me</a></li>
-			        <li><a href = "#/download"  ng-class="{ 'selected-class-name': $index == selectedIndex }"
-             ng-click="itemClicked($index)">Download Resume</a></li>
-	      		</ul>
+	      		   <li><a href = "#/about"  ng-class="{ 'selected-item': selectedIndex =='about'}"
+             ng-click="itemClicked('about')">About Me</a></li>
+			        <li><a href = "#/skills" ng-class="{ 'selected-item': selectedIndex =='skill' }"
+             ng-click="itemClicked('skill')">Skills</a></li>
+			        <li><a href = "#/work"  ng-class="{ 'selected-item': selectedIndex =='work' }"
+             ng-click="itemClicked('work')">My work</a></li>
+			        <li><a href = "#/contact"  ng-class="{ 'selected-item': selectedIndex =='contact' }"
+             ng-click="itemClicked('contact')">Contact Me</a></li>
+			        <li><a href="mailto:waghanil87@gmail.com?subject=CV:Anil Wagh-UI Developer&body=Please find my attched profile&attachment="+"/data1/resume.docx">Download Resume</a></li>
+          		</ul>
 	      	</nav>
 	      	<div class="ui-view-container animate">
 		      	<div ui-view></div>        

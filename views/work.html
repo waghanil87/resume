@@ -8,6 +8,8 @@
                 <div class="RightPane">
                     <div class="projectDetail jointLeft" ng-repeat="Project in projectDetails| limitTo: projectDetails.length/2+1" ng-click="popup($index, selectedProject)" data-toggle="modal" data-target=".bs-example-modal-lg">
                         <h3>{{ Project.ProjectName }}</h3>
+                        <div class="projectSummary"><label>Skills Used: </label>{{ Project.ProjectName }}</div>
+                        <div class="projectSummary">{{ Project.ProjectName }}</div>
                         <div class="projectSummary">{{ Project.ProjectName }}</div>
                         <joint></joint>
                     </div>    
@@ -15,6 +17,8 @@
                 <div class="LeftPane">
                     <div class="projectDetail jointRight" ng-repeat="Project in projectDetails| limitTo:projectDetails.length:projectDetails.length/2+1" ng-click="popup($index)" data-toggle="modal" data-target=".bs-example-modal-lg">
                         <h3>{{ Project.ProjectName }}</h3>
+                        <div class="projectSummary"><label>Skills Used: </label>{{ Project.ProjectName }}</div>
+                        <div class="projectSummary">{{ Project.ProjectName }}</div>
                         <div class="projectSummary">{{ Project.ProjectName }}</div>
                         <joint></joint>
                     </div>    

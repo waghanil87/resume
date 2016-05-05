@@ -32,7 +32,11 @@
             $rootScope.pageanimate = true;
             $animate.enabled(true);
         }
-      };
+      }
+      $rootScope.itemClicked = function(item){
+        console.log(item)
+        $rootScope.selectedIndex = item
+      }
       
     });
     

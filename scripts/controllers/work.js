@@ -11,6 +11,13 @@ angular.module('resumeExample').controller("workCtrl", function($scope,$rootScop
         console.log(typeof(indx))
         $scope.selectedProject =indx;
         console.log($scope.selectedProject)
+        if(indx%2==0){
+            $scope.selectedPopup = 'type1'
+            console.log('type1')
+        }else{
+            $scope.selectedPopup = 'type2'
+            console.log('type')
+        }
     }
 })
 .directive('outerWheel', function() {

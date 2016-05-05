@@ -1,4 +1,29 @@
 @font-face {
-    font-family: myFirstFont;
+    font-family: 'Capture it';
     src: url(../dependencies/webfont/Capture_it.ttf);
+    src: url('../dependencies/webfont/Capture_it.eot');
+	src: local('Capture it'), 
+	     url('Capture it.svg#CaptureIt') format('svg'),
+	     url('Capture it.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Titillium-Bold';
+	src: url('../dependencies/webfont/Titillium-Bold.eot');
+	src: local('../dependencies/webfont/Titillium-Bold'), 
+	     url('../dependencies/webfont/Titillium-Bold.svg') format('svg'),
+	     url('../dependencies/webfont/Titillium-Bold.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Titillium-Regular';
+	src: url('../dependencies/webfont/Titillium-Regular.eot');
+	src: local('../dependencies/webfont/Titillium-Regular'), 
+	     url('../dependencies/webfont/Titillium-Regular.svg') format('svg'),
+	     url('../dependencies/webfont/Titillium-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'Titillium-Semibold';
+	src: url('../dependencies/webfont/Titillium-Semibold.eot');
+	src: local('../dependencies/webfont/Titillium-Semibold'), 
+	     url('../dependencies/webfont/Titillium-Semibold.svg') format('svg'),
+	     url('../dependencies/webfont/Titillium-Semibold.ttf') format('opentype');
 }
